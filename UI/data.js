@@ -37,9 +37,6 @@ var firebaseRef = firebase.database().ref();
 var message = mainText.value;
 function calculate(){
   //calculate here
-if (h>2) {
-  window.alert("dad");
-}
 
 
 
