@@ -9,9 +9,9 @@
 
   <title></title>
 <header>
-  <h1 class="text-center">Life Jacket</h1>
-  <div class="ico text-right">
-    <i class="fa fa-info-circle" aria-hidden="true"></i>
+  <h1 class="text-center l-head">LIFE JACKET</h1>
+  <div class="ico ">
+    <a href="about.html>"<i class="fa fa-info-circle ico" aria-hidden="true"></i></a>
   </div>
 
 </header>
@@ -19,17 +19,33 @@
 
 <body>
 
+  <p id="demo"></p>
+    <p id="de"></p>
 <div id="btn_main"class="for_java 1">
+<div class="head-1">
+  <h2 class="text-center head-sub-1">Select the right option</h2>
+
+</div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm"></div>
       <div class="col-sm"></div>
       <div class="col-sm"></div>
-      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"><b>event1</b></div>
+      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"data-datac="1">
+        <div class="b1">
+          <i class="fa fa-heartbeat ic"></i>
+            <h3>Accident case</h3>
+        </div>
+      </div>
       <div class="col-sm"></div>
       <div class="col-sm"></div>
-      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"><b>event2</b></div>
+      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"data-datac="2">
+        <div class="b1">
+          <i class="fa fa-podcast ic"></i>
+            <h3>suspicious behaviour</h3>
+        </div>
+      </div>
       <div class="col-sm"></div>
       <div class="col-sm"></div>
       <div class="col-sm"></div>
@@ -38,13 +54,14 @@
 </div>
 <div class="text-center aler" >
 <div class="">
-  <h2>alert your details are submited police will contact you</h2>
+  <h2>i really appreciate your help and support</h2></br>
+  <h2>thank you </h2>
 </div>
 </div>
 
 <div id="intense"class="for_java 2">
   <div class="intensity text-center">
-    <label class="radio-inline" id="in"><input type="radio" name="eve" value="1">1</label>
+    <label class="radio-inline" id="in"><input type="radio" class="in-va" name="eve" value="1">1</label>
     <label class="radio-inline" id="in"><input type="radio" name="eve" value="2">2</label>
     <label class="radio-inline" id="in"><input type="radio" name="eve" value="3">3</label>
     <label class="radio-inline" id="in"><input type="radio" name="eve" value="4">4</label>
@@ -61,11 +78,11 @@
 <div id="comen"class="for_java 3">
 
   <div class="comment">
-  <div class="comment"><label for="exampleFormControlTextarea1 text-left">comments:</label></div>
-  <textarea class="form-control" id="mainText" rows="3"></textarea>
+  <div class="comment"><label for="exampleFormControlTextarea1 text-left" class="com">comments:</label></div>
+  <textarea class="form-control" id="mainText" rows="3"onfocus="clearContents(this);"></textarea>
 
   <div class="text-right">
-    <div class="button 3 btn btn-warning " type="button" id="sub"name="submit">submit</div>
+    <div class="button 3 btn btn-warning " type="button" id="btnc"onclick="cliCked();getLocation();"name="submit">submit</div>
   </div>
 
 </div>
@@ -75,14 +92,18 @@
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
         <script type="text/javascript">
+
 $(document).ready(function(){
   $("#intense").hide();
+  $("#demo").hide();
+  $("#de").hide();
 $("#comen").hide();
   $(".aler").hide();
   $(".button1").click(function () {
     $("#btn_main").hide();
     $(".aler").hide();
     $("#intense").show();
+
   });
 
   $(".radio-inline").click(function () {
@@ -91,15 +112,45 @@ $("#comen").hide();
     $("#comen").show();
   });
 
-  $("#sub").click(function () {
+  $("#btnc").click(function () {
     $("#comen").hide();
         $(".aler").show();
 
   });
 
 });
+function clearContents(element) {
+  element.value = '';
+}
+function showIFrame() {
+ var iframe = document.getElementById("myiframe");
+ iframe.style.display="block";
+}
+
 </script>
-<script src="index.js">
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBiUvPXndFf41n-IAVXCbfP5SMhFOrXfW4",
+      authDomain: "test-51c33.firebaseapp.com",
+      databaseURL: "https://test-51c33.firebaseio.com",
+      projectId: "test-51c33",
+      storageBucket: "test-51c33.appspot.com",
+      messagingSenderId: "762694005146"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="data.js">
+
+  </script>
+  <script src="buton.js">
+
+  </script>
+  <script src="loca.js">
+
+</script>
+<script src="cal.js">
 
 </script>
 </body>

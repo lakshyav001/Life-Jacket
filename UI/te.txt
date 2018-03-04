@@ -1,0 +1,28 @@
+/calulcation starts here
+if (h>=6 && h <=22) {
+aa= 10;
+<!--
+s=(h/6)*10+40;
+window.alert(s);
+}
+else if (dt.getHours()>=9 && dt.getHours() <=11) {
+window.alert("dddd");
+}
+else if (dt.getHours()>=6 && dt.getHours() <=9) {
+window.alert("ddds");
+}
+else if (dt.getHours()>=11 && dt.getHours() <=11.30) {
+window.alert("ddds");
+}
+else if (dt.getHours()>=11.30 && dt.getHours() <=13) {
+window.alert("ddds");
+}
+else if (dt.getHours()>=15 && dt.getHours() <=15.15) {
+window.alert("ddds");
+}
+else if (dt.getHours()>=15.15 && dt.getHours() <=18) {
+window.alert("fddd");
+}
+else if (dt.getHours()>=18 && dt.getHours() <=22) {
+window.alert("dgdd");
+}
