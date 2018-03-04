@@ -21,6 +21,7 @@
 
   <p id="demo"></p>
     <p id="de"></p>
+
 <div id="btn_main"class="for_java 1">
 <div class="head-1">
   <h2 class="text-center head-sub-1">Select the right option</h2>
@@ -58,6 +59,7 @@
   <h2>thank you </h2>
 </div>
 </div>
+  <h2 class="text-center head-sub-2" id="qw">intensity</h2>
 
 <div id="intense"class="for_java 2">
   <div class="intensity text-center">
@@ -97,11 +99,13 @@ $(document).ready(function(){
   $("#intense").hide();
   $("#demo").hide();
   $("#de").hide();
+    $("#qw").hide();
 $("#comen").hide();
   $(".aler").hide();
   $(".button1").click(function () {
     $("#btn_main").hide();
     $(".aler").hide();
+      $("#qw").show();
     $("#intense").show();
 
   });
