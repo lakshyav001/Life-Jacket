@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title></title>
+<header>
+  <h1 class="text-center">Life Jacket</h1>
+  <div class="ico text-right">
+    <i class="fa fa-info-circle" aria-hidden="true"></i>
+  </div>
+
+</header>
+</head>
+
+<body>
+
+<div id="btn_main"class="for_java 1">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"><b>event1</b></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="button1 btn btn-primary col-xs " type="button" id="btn_submi"><b>event2</b></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+  </div>
+  </div>
+</div>
+<div class="text-center aler" >
+<div class="">
+  <h2>alert your details are submited police will contact you</h2>
+</div>
+</div>
+
+<div id="intense"class="for_java 2">
+  <div class="intensity text-center">
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="1">1</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="2">2</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="3">3</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="4">4</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="5">5</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="6">6</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="7">7</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="8">8</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="9">9</label>
+    <label class="radio-inline" id="in"><input type="radio" name="eve" value="10">10</label>
+  </div>
+    </div>
+
+
+<div id="comen"class="for_java 3">
+
+  <div class="comment">
+  <div class="comment"><label for="exampleFormControlTextarea1 text-left">comments:</label></div>
+  <textarea class="form-control" id="mainText" rows="3"></textarea>
+
+  <div class="text-right">
+    <div class="button 3 btn btn-warning " type="button" id="sub"name="submit">submit</div>
+  </div>
+
+</div>
+</div>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+  $("#intense").hide();
+$("#comen").hide();
+  $(".aler").hide();
+  $(".button1").click(function () {
+    $("#btn_main").hide();
+    $(".aler").hide();
+    $("#intense").show();
+  });
+
+  $(".radio-inline").click(function () {
+    $("#intense").hide();
+        $(".aler").hide();
+    $("#comen").show();
+  });
+
+  $("#sub").click(function () {
+    $("#comen").hide();
+        $(".aler").show();
+
+  });
+
+});
+</script>
+<script src="index.js">
+
+</script>
+</body>
+</html>

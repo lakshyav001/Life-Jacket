@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  height: 30%;
+  position: relative;
+  background:#00ACC1;
+  background: linear-gradient(to bottom right, #90A4AE, #00ACC1);
+  opacity:0.8;
+}
+header:hover{
+  opacity:0.9;
+}
+h1{
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  padding-top: 10px;
+  font-size: 60;
+  font-weight: bolder;
+  color: rgb(255, 255,255);
+}
+h1:hover{
+  text-shadow: 2px 2px #01579B;
+  color: white;
+
+}
+.ico{
+  opacity:0.9;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+.ico:hover{
+  opacity:1;
+  cursor: help;
+}
+.for_java{
+  height: auto;
+  width: auto;
+  padding-top: 50px;
+}
+.word{
+  border: 100px;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+ul{
+  list-style-type: none;
+  padding: 1%;
+}
+li{
+  width: 30%;
+  height: 30%;
+  padding-top: 3%;
+}
+.button1{
+  padding: 10px;
+  background: #80CBC4;
+}
+.button1:hover{
+  opacity: 0.8;
+  background: #4DD0E1;
+
+}
+.button1:active{
+  transform: translateY(4px);
+  cursor: progress;
+  box-shadow: 3px 2px;
+}
+label{
+  color: #00897B;
+  opacity:0.9;
+}
+label:hover{
+  color: #0277BD;
+  opacity: 1;
+}
